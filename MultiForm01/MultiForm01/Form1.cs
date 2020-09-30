@@ -12,6 +12,7 @@ namespace MultiForm01
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -25,15 +26,28 @@ namespace MultiForm01
         private void btnApriForm2_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
+            f2.Text = "Form 2 da design";
             f2.Show();
+
+            Form2 f2b = new Form2(10);
+            f2b.Text = "Form 2 da design con parametro";
+            f2b.Show();
         }
+
 
         private void btnApriForm2B_Click(object sender, EventArgs e)
         {
             Form f2b = new Form();
             f2b.Text = "Aperta form dinamica";
             f2b.Show();
+        }
 
+        private void btnPassaTxt_Click(object sender, EventArgs e)
+        {
+
+            Form2 f2b = new Form2(txtPassata);
+            f2b.Text = "Form 2 passaggio di TextBox";
+            f2b.Show();
         }
     }
 }

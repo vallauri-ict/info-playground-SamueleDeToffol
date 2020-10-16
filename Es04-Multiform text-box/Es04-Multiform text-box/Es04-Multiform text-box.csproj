@@ -64,6 +64,12 @@
     <Compile Include="FormFiglia.Designer.cs">
       <DependentUpon>FormFiglia.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMDI.Designer.cs">
+      <DependentUpon>FormMDI.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSecondaria.cs">
       <SubType>Form</SubType>
     </Compile>

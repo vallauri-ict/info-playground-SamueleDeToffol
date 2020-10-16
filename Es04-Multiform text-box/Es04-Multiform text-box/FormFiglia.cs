@@ -12,9 +12,39 @@ namespace Es04_Multiform_text_box
 {
     public partial class FormFiglia : Form
     {
+        public string txtValue;
+        private TextBox txtPadre;
+
+        public string TxtValue
+        {
+            get => txtValue;
+            set
+            {
+                txtValue = value;
+                txtModificaFiglia.Text = txtValue;
+            }
+        }
+
+        public FormFiglia(TextBox txtPadre)
+        {
+            InitializeComponent();
+            this.txtPadre = txtPadre;
+        }
+
         public FormFiglia()
         {
             InitializeComponent();
+        }
+
+        private void txtModificaFiglia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModificaFiglia_Click(object sender, EventArgs e)
+        {
+            txtPadre.Text = txtModificaFiglia.Text;
+            
         }
     }
 }

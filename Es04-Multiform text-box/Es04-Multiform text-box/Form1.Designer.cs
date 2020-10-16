@@ -30,15 +30,15 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newSecondariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newFigliaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newSecondariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.newFigliaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDescrizione = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblName = new System.Windows.Forms.Label();
             this.lblEtà = new System.Windows.Forms.Label();
             this.txtNomePrinc = new System.Windows.Forms.TextBox();
@@ -46,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtModifica = new System.Windows.Forms.TextBox();
             this.btnModifica = new System.Windows.Forms.Button();
+            this.newMDIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,20 +74,29 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
-            this.toolStripMenuItem1.Text = "?";
-            // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newSecondariaToolStripMenuItem,
-            this.newFigliaToolStripMenuItem});
+            this.newFigliaToolStripMenuItem,
+            this.newMDIToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
+            // 
+            // newSecondariaToolStripMenuItem
+            // 
+            this.newSecondariaToolStripMenuItem.Name = "newSecondariaToolStripMenuItem";
+            this.newSecondariaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newSecondariaToolStripMenuItem.Text = "New secondaria";
+            this.newSecondariaToolStripMenuItem.Click += new System.EventHandler(this.newSecondariaToolStripMenuItem_Click);
+            // 
+            // newFigliaToolStripMenuItem
+            // 
+            this.newFigliaToolStripMenuItem.Name = "newFigliaToolStripMenuItem";
+            this.newFigliaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newFigliaToolStripMenuItem.Text = "New figlia";
+            this.newFigliaToolStripMenuItem.Click += new System.EventHandler(this.newFigliaToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
@@ -107,36 +118,30 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // newSecondariaToolStripMenuItem
+            // toolStripMenuItem1
             // 
-            this.newSecondariaToolStripMenuItem.Name = "newSecondariaToolStripMenuItem";
-            this.newSecondariaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newSecondariaToolStripMenuItem.Text = "New secondaria";
-            this.newSecondariaToolStripMenuItem.Click += new System.EventHandler(this.newSecondariaToolStripMenuItem_Click);
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.infoToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Text = "?";
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.toolStripDescrizione});
             this.statusStrip1.Location = new System.Drawing.Point(0, 428);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(800, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // toolStripDescrizione
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(52, 17);
-            this.toolStripStatusLabel1.Text = "Iniziamo";
-            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
-            // 
-            // newFigliaToolStripMenuItem
-            // 
-            this.newFigliaToolStripMenuItem.Name = "newFigliaToolStripMenuItem";
-            this.newFigliaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newFigliaToolStripMenuItem.Text = "New figlia";
-            this.newFigliaToolStripMenuItem.Click += new System.EventHandler(this.newFigliaToolStripMenuItem_Click);
+            this.toolStripDescrizione.Name = "toolStripDescrizione";
+            this.toolStripDescrizione.Size = new System.Drawing.Size(52, 17);
+            this.toolStripDescrizione.Text = "Iniziamo";
+            this.toolStripDescrizione.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // lblName
             // 
@@ -196,6 +201,21 @@
             this.btnModifica.TabIndex = 9;
             this.btnModifica.Text = "MODIFICA";
             this.btnModifica.UseVisualStyleBackColor = true;
+            this.btnModifica.Click += new System.EventHandler(this.btnModifica_Click);
+            // 
+            // newMDIToolStripMenuItem
+            // 
+            this.newMDIToolStripMenuItem.Name = "newMDIToolStripMenuItem";
+            this.newMDIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newMDIToolStripMenuItem.Text = "New MDI";
+            this.newMDIToolStripMenuItem.Click += new System.EventHandler(this.newMDIToolStripMenuItem_Click);
+            // 
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.infoToolStripMenuItem.Text = "Info";
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -236,7 +256,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripDescrizione;
         private System.Windows.Forms.ToolStripMenuItem newFigliaToolStripMenuItem;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblEtà;
@@ -245,6 +265,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtModifica;
         private System.Windows.Forms.Button btnModifica;
+        private System.Windows.Forms.ToolStripMenuItem newMDIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
     }
 }
 

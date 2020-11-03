@@ -41,6 +41,7 @@
             this.btnModificaFiglia.TabIndex = 0;
             this.btnModificaFiglia.Text = "INVIA";
             this.btnModificaFiglia.UseVisualStyleBackColor = true;
+            this.btnModificaFiglia.Click += new System.EventHandler(this.btnModificaFiglia_Click);
             // 
             // label1
             // 
@@ -57,6 +58,7 @@
             this.txtModificaFiglia.Name = "txtModificaFiglia";
             this.txtModificaFiglia.Size = new System.Drawing.Size(141, 20);
             this.txtModificaFiglia.TabIndex = 2;
+            this.txtModificaFiglia.TextChanged += new System.EventHandler(this.txtModificaFiglia_TextChanged);
             // 
             // FormFiglia
             // 

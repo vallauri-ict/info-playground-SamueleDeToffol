@@ -12,6 +12,9 @@ namespace Es04_Multiform_text_box
 {
     public partial class Form1 : Form
     {
+
+        public FormFiglia ff;
+
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +34,7 @@ namespace Es04_Multiform_text_box
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            toolStripDescrizione.Text = "Uscita";
             Form f = new FormExit();
             f.Text = "Uscire?";
             if (f.ShowDialog() == DialogResult.Yes)
@@ -41,6 +45,7 @@ namespace Es04_Multiform_text_box
 
         private void newSecondariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            toolStripDescrizione.Text = "Apertura form secondaria";
             FormSecondaria fsec = new FormSecondaria();
             //fsec.Show();
             if (fsec.ShowDialog() == DialogResult.Cancel)
@@ -53,12 +58,38 @@ namespace Es04_Multiform_text_box
                 txtEtàPrinc.Text = fsec.età;
             }
             
+
         }
 
-        private void newFigliaToolStripMenuItem_Click(object sender, EventArgs e)
+        public void newFigliaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormFiglia ffig = new FormFiglia();
+            toolStripDescrizione.Text = "Apertura form figlia";
+            ff = new FormFiglia(txtModifica);
+            ff.Show();
+            
+            
+        }
 
+        private void btnModifica_Click(object sender, EventArgs e)
+        {
+            ff.TxtValue = txtModifica.Text;
+        }
+
+        private void newMDIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toolStripDescrizione.Text = "Apertura form MDI";
+            FormMDI fmdi = new FormMDI();
+            fmdi.MdiParent = this;
+            fmdi.Size = new Size(210, 180);
+            fmdi.StartPosition = FormStartPosition.Manual;  //serve per far funzionare il Location
+            fmdi.Location = new Point(10, 200);
+            fmdi.Text = "Form MDI";
+            fmdi.Show();
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Programmatore: De Toffol Samuele");
         }
     }
 }

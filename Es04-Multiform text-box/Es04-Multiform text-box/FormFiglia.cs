@@ -16,5 +16,10 @@ namespace Es04_Multiform_text_box
         {
             InitializeComponent();
         }
+
+        private void FormFiglia_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

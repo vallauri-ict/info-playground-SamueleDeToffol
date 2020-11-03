@@ -9,3 +9,15 @@ C:\Users\s.detoffol.0728\Desktop\Info\info-playground-SamueleDeToffol\Es04-Multi
 C:\Users\s.detoffol.0728\Desktop\Info\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04-Multiform text-box.pdb
 C:\Users\s.detoffol.0728\Desktop\Info\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04_Multiform_text_box.FormExit.resources
 C:\Users\s.detoffol.0728\Desktop\Info\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04_Multiform_text_box.FormSecondaria.resources
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\bin\Debug\Es04-Multiform text-box.exe.config
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\bin\Debug\Es04-Multiform text-box.exe
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\bin\Debug\Es04-Multiform text-box.pdb
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04-Multiform text-box.csprojAssemblyReference.cache
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04_Multiform_text_box.Form1.resources
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04_Multiform_text_box.FormExit.resources
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04_Multiform_text_box.FormFiglia.resources
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04_Multiform_text_box.FormSecondaria.resources
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04_Multiform_text_box.Properties.Resources.resources
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04-Multiform text-box.csproj.GenerateResource.cache
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04-Multiform text-box.exe
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es04-Multiform text-box\Es04-Multiform text-box\obj\Debug\Es04-Multiform text-box.pdb

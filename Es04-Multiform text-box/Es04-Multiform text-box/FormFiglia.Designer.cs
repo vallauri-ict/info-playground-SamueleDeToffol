@@ -68,6 +68,7 @@
             this.Controls.Add(this.btnModificaFiglia);
             this.Name = "FormFiglia";
             this.Text = "FormFiglia";
+            this.Load += new System.EventHandler(this.FormFiglia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -40,7 +40,7 @@ namespace _4_009_PrintSpooler
         {
             string[] header = { "Indice", "Titolo", "Autore", "Prezzo" };
             dgv.ColumnCount = 4;
-            //dgv.RowCount = 1 ; default, rimane una riga vuota dopo
+            
             dgv.RowHeadersVisible = false;
             dgv.ClearSelection();
             dgv.ReadOnly = true;

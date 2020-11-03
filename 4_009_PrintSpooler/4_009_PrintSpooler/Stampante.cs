@@ -8,9 +8,9 @@ namespace _4_009_PrintSpooler
 {
     class Stampante
     {
-        public File fileStampa;
-        public Queue<File> codaStampa=new Queue<File>();
-        private static Stampante instance = null;
+        public File file;
+        public Queue<File> codaDiStampa=new Queue<File>();
+        private static Stampante istanza = null;
 
         private Stampante()
         {
@@ -18,30 +18,30 @@ namespace _4_009_PrintSpooler
 
         public Stampante(File fileStampa)
         {
-            this.fileStampa = fileStampa;
+            this.file = fileStampa;
         }
 
         public static Stampante InviaStampante(File fileStampa)
         {
-            if (instance == null)
+            if (istanza == null)
             {
-                instance = new Stampante(fileStampa);
+                istanza = new Stampante(fileStampa);
             }
-            instance.codaStampa.Enqueue(fileStampa);
+            istanza.codaDiStampa.Enqueue(fileStampa);
             mostraSuDgv();
-            return instance;
+            return istanza;
         }
 
         private static void mostraSuDgv()
         {
             Form1.dataGV.Rows.Clear();
-            for (int i = 0; i < instance.codaStampa.Count; i++)
+            for (int i = 0; i < istanza.codaDiStampa.Count; i++)
             {
                 Form1.dataGV.Rows.Add();
                 Form1.dataGV.Rows[i].Cells[0].Value = (i+1).ToString();
-                Form1.dataGV.Rows[i].Cells[1].Value = instance.codaStampa.ElementAt(i).titolo;
-                Form1.dataGV.Rows[i].Cells[2].Value = instance.codaStampa.ElementAt(i).autore;
-                Form1.dataGV.Rows[i].Cells[3].Value = instance.codaStampa.ElementAt(i).prezzo.ToString();
+                Form1.dataGV.Rows[i].Cells[1].Value = istanza.codaDiStampa.ElementAt(i).titolo;
+                Form1.dataGV.Rows[i].Cells[2].Value = istanza.codaDiStampa.ElementAt(i).autore;
+                Form1.dataGV.Rows[i].Cells[3].Value = istanza.codaDiStampa.ElementAt(i).prezzo.ToString();
                 
             }
             
@@ -51,11 +51,11 @@ namespace _4_009_PrintSpooler
         public static void StampaCoda()
         {
             File fileDaStampare;
-            while (instance.codaStampa.Count!=0)
+            while (istanza.codaDiStampa.Count!=0)
             {
-                fileDaStampare = instance.codaStampa.Peek();
+                fileDaStampare = istanza.codaDiStampa.Peek();
                 System.Windows.Forms.MessageBox.Show("Stampa in corso di "+fileDaStampare.titolo+" di "+fileDaStampare.autore +". Prezzo: "+fileDaStampare.prezzo.ToString()+"€");
-                instance.codaStampa.Dequeue();
+                istanza.codaDiStampa.Dequeue();
                 mostraSuDgv();
             }
         }

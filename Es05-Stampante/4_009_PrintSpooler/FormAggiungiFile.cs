@@ -25,25 +25,30 @@ namespace _4_009_PrintSpooler
             titolo = txtTitolo.Text;
             autore = txtAutore.Text;
             prezzo = Convert.ToDouble(numPrezzo.Value);
-            File f = null;
+            File file = null;
             try
             {
-                f = File.CreaFile(titolo, autore, prezzo);
+                file = File.CreaFile(titolo, autore, prezzo);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            if (f != null)
+            if (file != null)
             {
-                Stampante.InviaStampante(f);
+                Stampante.InviaStampante(file);
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormAggiungiFile_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -124,6 +124,7 @@
             this.Controls.Add(this.button1);
             this.Name = "FormAggiungiFile";
             this.Text = "FormAggiungiFile";
+            this.Load += new System.EventHandler(this.FormAggiungiFile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numPrezzo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

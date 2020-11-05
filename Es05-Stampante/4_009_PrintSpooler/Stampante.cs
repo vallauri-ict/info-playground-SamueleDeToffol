@@ -9,7 +9,7 @@ namespace _4_009_PrintSpooler
     class Stampante
     {
         public File file;
-        public Queue<File> codaDiStampa=new Queue<File>();
+        public Queue<File> coda=new Queue<File>();
         private static Stampante istanza = null;
 
         private Stampante()
@@ -27,7 +27,7 @@ namespace _4_009_PrintSpooler
             {
                 istanza = new Stampante(fileStampa);
             }
-            istanza.codaDiStampa.Enqueue(fileStampa);
+            istanza.coda.Enqueue(fileStampa);
             mostraSuDgv();
             return istanza;
         }
@@ -35,13 +35,13 @@ namespace _4_009_PrintSpooler
         private static void mostraSuDgv()
         {
             Form1.dataGV.Rows.Clear();
-            for (int i = 0; i < istanza.codaDiStampa.Count; i++)
+            for (int i = 0; i < istanza.coda.Count; i++)
             {
                 Form1.dataGV.Rows.Add();
                 Form1.dataGV.Rows[i].Cells[0].Value = (i+1).ToString();
-                Form1.dataGV.Rows[i].Cells[1].Value = istanza.codaDiStampa.ElementAt(i).titolo;
-                Form1.dataGV.Rows[i].Cells[2].Value = istanza.codaDiStampa.ElementAt(i).autore;
-                Form1.dataGV.Rows[i].Cells[3].Value = istanza.codaDiStampa.ElementAt(i).prezzo.ToString();
+                Form1.dataGV.Rows[i].Cells[1].Value = istanza.coda.ElementAt(i).titolo;
+                Form1.dataGV.Rows[i].Cells[2].Value = istanza.coda.ElementAt(i).autore;
+                Form1.dataGV.Rows[i].Cells[3].Value = istanza.coda.ElementAt(i).prezzo.ToString();
                 
             }
             
@@ -51,11 +51,11 @@ namespace _4_009_PrintSpooler
         public static void StampaCoda()
         {
             File fileDaStampare;
-            while (istanza.codaDiStampa.Count!=0)
+            while (istanza.coda.Count!=0)
             {
-                fileDaStampare = istanza.codaDiStampa.Peek();
+                fileDaStampare = istanza.coda.Peek();
                 System.Windows.Forms.MessageBox.Show("Stampa in corso di "+fileDaStampare.titolo+" di "+fileDaStampare.autore +". Prezzo: "+fileDaStampare.prezzo.ToString()+"€");
-                istanza.codaDiStampa.Dequeue();
+                istanza.coda.Dequeue();
                 mostraSuDgv();
             }
         }

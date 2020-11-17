@@ -47,11 +47,11 @@ namespace Es09ProvaDictionary
 
         private void btnVisualizza_Click(object sender, EventArgs e)
         {
-            Libro aus;
+            Libro ausiliare;
             foreach (int key in dictionaryLibri.Keys)
             {
-                aus = dictionaryLibri[key];
-                MessageBox.Show("Titolo: "+aus.titolo+"\nAutore: "+aus.autore,key.ToString());
+                ausiliare = dictionaryLibri[key];
+                MessageBox.Show("Titolo: "+ausiliare.titolo+"\nAutore: "+ausiliare.autore,key.ToString());
             }
         }
     }

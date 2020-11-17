@@ -55,7 +55,7 @@ namespace Es08Liste
         {
             try
             {
-                ClasseLibro cl = ClasseLibro.creaLibro(txtTitolo.Text, txtAutore.Text, Convert.ToInt32(txtID.Text));
+                ClasseLibro cls = ClasseLibro.creaLibro(txtTitolo.Text, txtAutore.Text, Convert.ToInt32(txtID.Text));
                 MessageBox.Show("Oggetto creato correttamente");
                 clear();
             }

@@ -22,15 +22,15 @@ namespace Es08Liste
 
         public static ClasseLibro creaLibro(string titolo, string autore, int id)
         {
-            if (String.IsNullOrWhiteSpace(titolo)||String.IsNullOrWhiteSpace(autore))//se int da messaggio della eccezione di default
+            if (String.IsNullOrWhiteSpace(titolo)||String.IsNullOrWhiteSpace(autore))
             {
                 throw new Exception("Errore nell'input");
             }
             else
             {
-                ClasseLibro cl = new ClasseLibro(titolo, autore, id);
-                listaLibri.Add(cl);
-                return cl;
+                ClasseLibro cls = new ClasseLibro(titolo, autore, id);
+                listaLibri.Add(cls);
+                return cls;
             }
             
         }

@@ -1,0 +1,9 @@
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\obj\Debug\Es08-Lista.csprojAssemblyReference.cache
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\obj\Debug\Es08_Lista.Properties.Resources.resources
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\obj\Debug\Es08-Lista.csproj.GenerateResource.cache
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\bin\Debug\Es08-Lista.exe.config
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\bin\Debug\Es08-Lista.exe
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\bin\Debug\Es08-Lista.pdb
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\obj\Debug\Es08-Lista.exe
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\obj\Debug\Es08-Lista.pdb
+C:\Users\Utente\Desktop\Scuola 4B\INFO\Nuova cartella\info-playground-SamueleDeToffol\Es08-Lista\Es08-Lista\obj\Debug\Es08_Lista.Form1.resources

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es03-MultiFormMenu", "Es03-MultiFormMenu\Es03-MultiFormMenu.csproj", "{60C84F67-1960-4388-8DD0-78FDD9362869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60C84F67-1960-4388-8DD0-78FDD9362869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C84F67-1960-4388-8DD0-78FDD9362869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C84F67-1960-4388-8DD0-78FDD9362869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C84F67-1960-4388-8DD0-78FDD9362869}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B439A92-7F35-4D31-A65A-DF179D5529D5}
+	EndGlobalSection
+EndGlobal

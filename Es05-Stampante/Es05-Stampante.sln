@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es05-Stampante", "Es05-Stampante\Es05-Stampante.csproj", "{347FCB0D-95D1-48D8-80BF-0DDCB05F7B4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{347FCB0D-95D1-48D8-80BF-0DDCB05F7B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347FCB0D-95D1-48D8-80BF-0DDCB05F7B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347FCB0D-95D1-48D8-80BF-0DDCB05F7B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347FCB0D-95D1-48D8-80BF-0DDCB05F7B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12BD1C15-FA38-476A-9F4F-281252493D60}
+	EndGlobalSection
+EndGlobal
